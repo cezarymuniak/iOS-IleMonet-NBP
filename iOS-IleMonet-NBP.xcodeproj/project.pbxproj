@@ -7,26 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83533DBC2427AAED00E49C99 /* adventpro-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83533DB52427AAED00E49C99 /* adventpro-medium.ttf */; };
+		83533DBD2427AAED00E49C99 /* adventpro-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83533DB62427AAED00E49C99 /* adventpro-regular.ttf */; };
+		83533DBE2427AAED00E49C99 /* adventpro-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83533DB72427AAED00E49C99 /* adventpro-bold.ttf */; };
+		83533DBF2427AAED00E49C99 /* adventpro-thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83533DB82427AAED00E49C99 /* adventpro-thin.ttf */; };
+		83533DC02427AAED00E49C99 /* adventpro-extralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83533DB92427AAED00E49C99 /* adventpro-extralight.ttf */; };
+		83533DC12427AAED00E49C99 /* adventpro-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83533DBA2427AAED00E49C99 /* adventpro-semibold.ttf */; };
+		83533DC22427AAED00E49C99 /* adventpro-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83533DBB2427AAED00E49C99 /* adventpro-light.ttf */; };
 		838499EF2427A03600EC18CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838499EE2427A03600EC18CF /* AppDelegate.swift */; };
 		838499F32427A03600EC18CF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838499F22427A03600EC18CF /* MainViewController.swift */; };
 		838499F62427A03600EC18CF /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838499F42427A03600EC18CF /* MainViewController.storyboard */; };
 		838499F82427A03800EC18CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838499F72427A03800EC18CF /* Assets.xcassets */; };
 		838499FB2427A03800EC18CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838499F92427A03800EC18CF /* LaunchScreen.storyboard */; };
 		83849A092427A49E00EC18CF /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83849A082427A49E00EC18CF /* R.generated.swift */; };
+		83849A0B2427A73E00EC18CF /* TopBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83849A0A2427A73E00EC18CF /* TopBar.xib */; };
+		83849A0D2427A75000EC18CF /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83849A0C2427A75000EC18CF /* TopBar.swift */; };
 		FA829F5EA0C7FD853DCDC918 /* Pods_iOS_IleMonet_NBP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9B7A331226D3B5A9174DBF /* Pods_iOS_IleMonet_NBP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		324782CF0C3B6E89F79671B3 /* Pods-iOS-IleMonet-NBP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-IleMonet-NBP.debug.xcconfig"; path = "Target Support Files/Pods-iOS-IleMonet-NBP/Pods-iOS-IleMonet-NBP.debug.xcconfig"; sourceTree = "<group>"; };
 		811809C396B4DC6B6A4DBC2D /* Pods-iOS-IleMonet-NBP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-IleMonet-NBP.release.xcconfig"; path = "Target Support Files/Pods-iOS-IleMonet-NBP/Pods-iOS-IleMonet-NBP.release.xcconfig"; sourceTree = "<group>"; };
+		83533DB22427A98400E49C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83533DB52427AAED00E49C99 /* adventpro-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "adventpro-medium.ttf"; sourceTree = "<group>"; };
+		83533DB62427AAED00E49C99 /* adventpro-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "adventpro-regular.ttf"; sourceTree = "<group>"; };
+		83533DB72427AAED00E49C99 /* adventpro-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "adventpro-bold.ttf"; sourceTree = "<group>"; };
+		83533DB82427AAED00E49C99 /* adventpro-thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "adventpro-thin.ttf"; sourceTree = "<group>"; };
+		83533DB92427AAED00E49C99 /* adventpro-extralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "adventpro-extralight.ttf"; sourceTree = "<group>"; };
+		83533DBA2427AAED00E49C99 /* adventpro-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "adventpro-semibold.ttf"; sourceTree = "<group>"; };
+		83533DBB2427AAED00E49C99 /* adventpro-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "adventpro-light.ttf"; sourceTree = "<group>"; };
 		838499EB2427A03600EC18CF /* iOS-IleMonet-NBP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-IleMonet-NBP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		838499EE2427A03600EC18CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		838499F22427A03600EC18CF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		838499F52427A03600EC18CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainViewController.storyboard; sourceTree = "<group>"; };
 		838499F72427A03800EC18CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		838499FA2427A03800EC18CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		838499FC2427A03800EC18CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		83849A082427A49E00EC18CF /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		83849A0A2427A73E00EC18CF /* TopBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopBar.xib; sourceTree = "<group>"; };
+		83849A0C2427A75000EC18CF /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		8E9B7A331226D3B5A9174DBF /* Pods_iOS_IleMonet_NBP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_IleMonet_NBP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -49,6 +67,28 @@
 				811809C396B4DC6B6A4DBC2D /* Pods-iOS-IleMonet-NBP.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		83533DB32427AA8F00E49C99 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83533DB42427AA9B00E49C99 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		83533DB42427AA9B00E49C99 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				83533DB72427AAED00E49C99 /* adventpro-bold.ttf */,
+				83533DB92427AAED00E49C99 /* adventpro-extralight.ttf */,
+				83533DBB2427AAED00E49C99 /* adventpro-light.ttf */,
+				83533DB52427AAED00E49C99 /* adventpro-medium.ttf */,
+				83533DB62427AAED00E49C99 /* adventpro-regular.ttf */,
+				83533DBA2427AAED00E49C99 /* adventpro-semibold.ttf */,
+				83533DB82427AAED00E49C99 /* adventpro-thin.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		838499E22427A03600EC18CF = {
@@ -75,11 +115,12 @@
 				83849A022427A30700EC18CF /* Model */,
 				83849A052427A32500EC18CF /* View */,
 				83849A032427A31200EC18CF /* Controller */,
+				83533DB32427AA8F00E49C99 /* Resources */,
 				838499EE2427A03600EC18CF /* AppDelegate.swift */,
 				838499F72427A03800EC18CF /* Assets.xcassets */,
 				838499F92427A03800EC18CF /* LaunchScreen.storyboard */,
 				83849A082427A49E00EC18CF /* R.generated.swift */,
-				838499FC2427A03800EC18CF /* Info.plist */,
+				83533DB22427A98400E49C99 /* Info.plist */,
 			);
 			path = "iOS-IleMonet-NBP";
 			sourceTree = "<group>";
@@ -111,6 +152,8 @@
 		83849A062427A3B200EC18CF /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				83849A0A2427A73E00EC18CF /* TopBar.xib */,
+				83849A0C2427A75000EC18CF /* TopBar.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -184,9 +227,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83533DBC2427AAED00E49C99 /* adventpro-medium.ttf in Resources */,
+				83533DBF2427AAED00E49C99 /* adventpro-thin.ttf in Resources */,
+				83533DBD2427AAED00E49C99 /* adventpro-regular.ttf in Resources */,
+				83533DBE2427AAED00E49C99 /* adventpro-bold.ttf in Resources */,
 				838499FB2427A03800EC18CF /* LaunchScreen.storyboard in Resources */,
 				838499F82427A03800EC18CF /* Assets.xcassets in Resources */,
 				838499F62427A03600EC18CF /* MainViewController.storyboard in Resources */,
+				83533DC12427AAED00E49C99 /* adventpro-semibold.ttf in Resources */,
+				83533DC22427AAED00E49C99 /* adventpro-light.ttf in Resources */,
+				83533DC02427AAED00E49C99 /* adventpro-extralight.ttf in Resources */,
+				83849A0B2427A73E00EC18CF /* TopBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +312,7 @@
 				838499F32427A03600EC18CF /* MainViewController.swift in Sources */,
 				838499EF2427A03600EC18CF /* AppDelegate.swift in Sources */,
 				83849A092427A49E00EC18CF /* R.generated.swift in Sources */,
+				83849A0D2427A75000EC18CF /* TopBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

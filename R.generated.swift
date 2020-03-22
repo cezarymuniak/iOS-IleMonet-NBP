@@ -85,6 +85,7 @@ struct R: Rswift.Validatable {
   }
 
   static func validate() throws {
+    try font.validate()
     try intern.validate()
   }
 
@@ -114,6 +115,153 @@ struct R: Rswift.Validatable {
   }
   #endif
 
+  /// This `R.file` struct is generated, and contains static references to 7 files.
+  struct file {
+    /// Resource file `adventpro-bold.ttf`.
+    static let adventproBoldTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "adventpro-bold", pathExtension: "ttf")
+    /// Resource file `adventpro-extralight.ttf`.
+    static let adventproExtralightTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "adventpro-extralight", pathExtension: "ttf")
+    /// Resource file `adventpro-light.ttf`.
+    static let adventproLightTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "adventpro-light", pathExtension: "ttf")
+    /// Resource file `adventpro-medium.ttf`.
+    static let adventproMediumTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "adventpro-medium", pathExtension: "ttf")
+    /// Resource file `adventpro-regular.ttf`.
+    static let adventproRegularTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "adventpro-regular", pathExtension: "ttf")
+    /// Resource file `adventpro-semibold.ttf`.
+    static let adventproSemiboldTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "adventpro-semibold", pathExtension: "ttf")
+    /// Resource file `adventpro-thin.ttf`.
+    static let adventproThinTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "adventpro-thin", pathExtension: "ttf")
+
+    /// `bundle.url(forResource: "adventpro-bold", withExtension: "ttf")`
+    static func adventproBoldTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.adventproBoldTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "adventpro-extralight", withExtension: "ttf")`
+    static func adventproExtralightTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.adventproExtralightTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "adventpro-light", withExtension: "ttf")`
+    static func adventproLightTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.adventproLightTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "adventpro-medium", withExtension: "ttf")`
+    static func adventproMediumTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.adventproMediumTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "adventpro-regular", withExtension: "ttf")`
+    static func adventproRegularTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.adventproRegularTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "adventpro-semibold", withExtension: "ttf")`
+    static func adventproSemiboldTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.adventproSemiboldTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "adventpro-thin", withExtension: "ttf")`
+    static func adventproThinTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.adventproThinTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    fileprivate init() {}
+  }
+
+  /// This `R.font` struct is generated, and contains static references to 7 fonts.
+  struct font: Rswift.Validatable {
+    /// Font `AdventPro-Bold`.
+    static let adventProBold = Rswift.FontResource(fontName: "AdventPro-Bold")
+    /// Font `AdventPro-ExtraLight`.
+    static let adventProExtraLight = Rswift.FontResource(fontName: "AdventPro-ExtraLight")
+    /// Font `AdventPro-Light`.
+    static let adventProLight = Rswift.FontResource(fontName: "AdventPro-Light")
+    /// Font `AdventPro-Medium`.
+    static let adventProMedium = Rswift.FontResource(fontName: "AdventPro-Medium")
+    /// Font `AdventPro-Regular`.
+    static let adventProRegular = Rswift.FontResource(fontName: "AdventPro-Regular")
+    /// Font `AdventPro-SemiBold`.
+    static let adventProSemiBold = Rswift.FontResource(fontName: "AdventPro-SemiBold")
+    /// Font `AdventPro-Thin`.
+    static let adventProThin = Rswift.FontResource(fontName: "AdventPro-Thin")
+
+    /// `UIFont(name: "AdventPro-Bold", size: ...)`
+    static func adventProBold(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: adventProBold, size: size)
+    }
+
+    /// `UIFont(name: "AdventPro-ExtraLight", size: ...)`
+    static func adventProExtraLight(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: adventProExtraLight, size: size)
+    }
+
+    /// `UIFont(name: "AdventPro-Light", size: ...)`
+    static func adventProLight(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: adventProLight, size: size)
+    }
+
+    /// `UIFont(name: "AdventPro-Medium", size: ...)`
+    static func adventProMedium(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: adventProMedium, size: size)
+    }
+
+    /// `UIFont(name: "AdventPro-Regular", size: ...)`
+    static func adventProRegular(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: adventProRegular, size: size)
+    }
+
+    /// `UIFont(name: "AdventPro-SemiBold", size: ...)`
+    static func adventProSemiBold(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: adventProSemiBold, size: size)
+    }
+
+    /// `UIFont(name: "AdventPro-Thin", size: ...)`
+    static func adventProThin(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: adventProThin, size: size)
+    }
+
+    static func validate() throws {
+      if R.font.adventProBold(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AdventPro-Bold' could not be loaded, is 'adventpro-bold.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.adventProExtraLight(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AdventPro-ExtraLight' could not be loaded, is 'adventpro-extralight.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.adventProLight(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AdventPro-Light' could not be loaded, is 'adventpro-light.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.adventProMedium(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AdventPro-Medium' could not be loaded, is 'adventpro-medium.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.adventProRegular(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AdventPro-Regular' could not be loaded, is 'adventpro-regular.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.adventProSemiBold(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AdventPro-SemiBold' could not be loaded, is 'adventpro-semibold.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.adventProThin(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AdventPro-Thin' could not be loaded, is 'adventpro-thin.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+    }
+
+    fileprivate init() {}
+  }
+
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  struct nib {
+    /// Nib `TopBar`.
+    static let topBar = _R.nib._TopBar()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "TopBar", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.topBar) instead")
+    static func topBar(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.topBar)
+    }
+    #endif
+
+    static func topBar(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.topBar.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    fileprivate init() {}
+  }
+
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
       try _R.validate()
@@ -133,6 +281,23 @@ struct _R: Rswift.Validatable {
     try storyboard.validate()
     #endif
   }
+
+  #if os(iOS) || os(tvOS)
+  struct nib {
+    struct _TopBar: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "TopBar"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      fileprivate init() {}
+    }
+
+    fileprivate init() {}
+  }
+  #endif
 
   #if os(iOS) || os(tvOS)
   struct storyboard: Rswift.Validatable {

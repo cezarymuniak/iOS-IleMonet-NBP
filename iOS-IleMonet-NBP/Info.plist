@@ -20,6 +20,16 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>adventpro-semibold.ttf</string>
+		<string>adventpro-thin.ttf</string>
+		<string>adventpro-bold.ttf</string>
+		<string>adventpro-extralight.ttf</string>
+		<string>adventpro-light.ttf</string>
+		<string>adventpro-medium.ttf</string>
+		<string>adventpro-regular.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
