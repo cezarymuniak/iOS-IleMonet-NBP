@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		838499F62427A03600EC18CF /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838499F42427A03600EC18CF /* MainViewController.storyboard */; };
 		838499F82427A03800EC18CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838499F72427A03800EC18CF /* Assets.xcassets */; };
 		838499FB2427A03800EC18CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838499F92427A03800EC18CF /* LaunchScreen.storyboard */; };
+		83849A092427A49E00EC18CF /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83849A082427A49E00EC18CF /* R.generated.swift */; };
 		FA829F5EA0C7FD853DCDC918 /* Pods_iOS_IleMonet_NBP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9B7A331226D3B5A9174DBF /* Pods_iOS_IleMonet_NBP.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +25,8 @@
 		838499F52427A03600EC18CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainViewController.storyboard; sourceTree = "<group>"; };
 		838499F72427A03800EC18CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		838499FA2427A03800EC18CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		838499FC2427A03800EC18CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		838499FC2427A03800EC18CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		83849A082427A49E00EC18CF /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		8E9B7A331226D3B5A9174DBF /* Pods_iOS_IleMonet_NBP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_IleMonet_NBP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -46,7 +48,6 @@
 				324782CF0C3B6E89F79671B3 /* Pods-iOS-IleMonet-NBP.debug.xcconfig */,
 				811809C396B4DC6B6A4DBC2D /* Pods-iOS-IleMonet-NBP.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -71,14 +72,47 @@
 		838499ED2427A03600EC18CF /* iOS-IleMonet-NBP */ = {
 			isa = PBXGroup;
 			children = (
+				83849A022427A30700EC18CF /* Model */,
+				83849A052427A32500EC18CF /* View */,
+				83849A032427A31200EC18CF /* Controller */,
 				838499EE2427A03600EC18CF /* AppDelegate.swift */,
-				838499F22427A03600EC18CF /* MainViewController.swift */,
-				838499F42427A03600EC18CF /* MainViewController.storyboard */,
 				838499F72427A03800EC18CF /* Assets.xcassets */,
 				838499F92427A03800EC18CF /* LaunchScreen.storyboard */,
+				83849A082427A49E00EC18CF /* R.generated.swift */,
 				838499FC2427A03800EC18CF /* Info.plist */,
 			);
 			path = "iOS-IleMonet-NBP";
+			sourceTree = "<group>";
+		};
+		83849A022427A30700EC18CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		83849A032427A31200EC18CF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				838499F22427A03600EC18CF /* MainViewController.swift */,
+				838499F42427A03600EC18CF /* MainViewController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		83849A052427A32500EC18CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83849A062427A3B200EC18CF /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83849A062427A3B200EC18CF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		D44FA58214EABBF67127544F /* Frameworks */ = {
@@ -97,6 +131,7 @@
 			buildConfigurationList = 838499FF2427A03800EC18CF /* Build configuration list for PBXNativeTarget "iOS-IleMonet-NBP" */;
 			buildPhases = (
 				25EF0ECC39B088D29E7B7D8F /* [CP] Check Pods Manifest.lock */,
+				83849A072427A42300EC18CF /* ShellScript */,
 				838499E72427A03600EC18CF /* Sources */,
 				838499E82427A03600EC18CF /* Frameworks */,
 				838499E92427A03600EC18CF /* Resources */,
@@ -180,6 +215,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		83849A072427A42300EC18CF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		CD933DF66BA02D2551790FE8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,6 +260,7 @@
 			files = (
 				838499F32427A03600EC18CF /* MainViewController.swift in Sources */,
 				838499EF2427A03600EC18CF /* AppDelegate.swift in Sources */,
+				83849A092427A49E00EC18CF /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
