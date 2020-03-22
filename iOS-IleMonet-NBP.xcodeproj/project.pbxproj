@@ -12,9 +12,12 @@
 		838499F62427A03600EC18CF /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838499F42427A03600EC18CF /* MainViewController.storyboard */; };
 		838499F82427A03800EC18CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838499F72427A03800EC18CF /* Assets.xcassets */; };
 		838499FB2427A03800EC18CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838499F92427A03800EC18CF /* LaunchScreen.storyboard */; };
+		FA829F5EA0C7FD853DCDC918 /* Pods_iOS_IleMonet_NBP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9B7A331226D3B5A9174DBF /* Pods_iOS_IleMonet_NBP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		324782CF0C3B6E89F79671B3 /* Pods-iOS-IleMonet-NBP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-IleMonet-NBP.debug.xcconfig"; path = "Target Support Files/Pods-iOS-IleMonet-NBP/Pods-iOS-IleMonet-NBP.debug.xcconfig"; sourceTree = "<group>"; };
+		811809C396B4DC6B6A4DBC2D /* Pods-iOS-IleMonet-NBP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-IleMonet-NBP.release.xcconfig"; path = "Target Support Files/Pods-iOS-IleMonet-NBP/Pods-iOS-IleMonet-NBP.release.xcconfig"; sourceTree = "<group>"; };
 		838499EB2427A03600EC18CF /* iOS-IleMonet-NBP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-IleMonet-NBP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		838499EE2427A03600EC18CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		838499F22427A03600EC18CF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		838499F72427A03800EC18CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		838499FA2427A03800EC18CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		838499FC2427A03800EC18CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E9B7A331226D3B5A9174DBF /* Pods_iOS_IleMonet_NBP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_IleMonet_NBP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA829F5EA0C7FD853DCDC918 /* Pods_iOS_IleMonet_NBP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00ADE77FF796E75082AAB265 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				324782CF0C3B6E89F79671B3 /* Pods-iOS-IleMonet-NBP.debug.xcconfig */,
+				811809C396B4DC6B6A4DBC2D /* Pods-iOS-IleMonet-NBP.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		838499E22427A03600EC18CF = {
 			isa = PBXGroup;
 			children = (
 				838499ED2427A03600EC18CF /* iOS-IleMonet-NBP */,
 				838499EC2427A03600EC18CF /* Products */,
+				00ADE77FF796E75082AAB265 /* Pods */,
+				D44FA58214EABBF67127544F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,14 @@
 			path = "iOS-IleMonet-NBP";
 			sourceTree = "<group>";
 		};
+		D44FA58214EABBF67127544F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E9B7A331226D3B5A9174DBF /* Pods_iOS_IleMonet_NBP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 838499FF2427A03800EC18CF /* Build configuration list for PBXNativeTarget "iOS-IleMonet-NBP" */;
 			buildPhases = (
+				25EF0ECC39B088D29E7B7D8F /* [CP] Check Pods Manifest.lock */,
 				838499E72427A03600EC18CF /* Sources */,
 				838499E82427A03600EC18CF /* Frameworks */,
 				838499E92427A03600EC18CF /* Resources */,
+				CD933DF66BA02D2551790FE8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25EF0ECC39B088D29E7B7D8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-IleMonet-NBP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD933DF66BA02D2551790FE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-IleMonet-NBP/Pods-iOS-IleMonet-NBP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-IleMonet-NBP/Pods-iOS-IleMonet-NBP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS-IleMonet-NBP/Pods-iOS-IleMonet-NBP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		838499E72427A03600EC18CF /* Sources */ = {
@@ -278,6 +347,7 @@
 		};
 		83849A002427A03800EC18CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 324782CF0C3B6E89F79671B3 /* Pods-iOS-IleMonet-NBP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +366,7 @@
 		};
 		83849A012427A03800EC18CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 811809C396B4DC6B6A4DBC2D /* Pods-iOS-IleMonet-NBP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
