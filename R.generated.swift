@@ -242,6 +242,381 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.image` struct is generated, and contains static references to 41 images.
+  struct image {
+    /// Image `australia-aud`.
+    static let australiaAud = Rswift.ImageResource(bundle: R.hostingBundle, name: "australia-aud")
+    /// Image `back`.
+    static let back = Rswift.ImageResource(bundle: R.hostingBundle, name: "back")
+    /// Image `brazil-brl`.
+    static let brazilBrl = Rswift.ImageResource(bundle: R.hostingBundle, name: "brazil-brl")
+    /// Image `bulgaria-bgn`.
+    static let bulgariaBgn = Rswift.ImageResource(bundle: R.hostingBundle, name: "bulgaria-bgn")
+    /// Image `canada-cad`.
+    static let canadaCad = Rswift.ImageResource(bundle: R.hostingBundle, name: "canada-cad")
+    /// Image `china-cny`.
+    static let chinaCny = Rswift.ImageResource(bundle: R.hostingBundle, name: "china-cny")
+    /// Image `circle`.
+    static let circle = Rswift.ImageResource(bundle: R.hostingBundle, name: "circle")
+    /// Image `croatia-hrk`.
+    static let croatiaHrk = Rswift.ImageResource(bundle: R.hostingBundle, name: "croatia-hrk")
+    /// Image `czech-republic-czk`.
+    static let czechRepublicCzk = Rswift.ImageResource(bundle: R.hostingBundle, name: "czech-republic-czk")
+    /// Image `denmark-dkk`.
+    static let denmarkDkk = Rswift.ImageResource(bundle: R.hostingBundle, name: "denmark-dkk")
+    /// Image `european-union`.
+    static let europeanUnion = Rswift.ImageResource(bundle: R.hostingBundle, name: "european-union")
+    /// Image `frame`.
+    static let frame = Rswift.ImageResource(bundle: R.hostingBundle, name: "frame")
+    /// Image `hong-kong-hkd`.
+    static let hongKongHkd = Rswift.ImageResource(bundle: R.hostingBundle, name: "hong-kong-hkd")
+    /// Image `hungary-huf`.
+    static let hungaryHuf = Rswift.ImageResource(bundle: R.hostingBundle, name: "hungary-huf")
+    /// Image `iceland-isk`.
+    static let icelandIsk = Rswift.ImageResource(bundle: R.hostingBundle, name: "iceland-isk")
+    /// Image `india-inr`.
+    static let indiaInr = Rswift.ImageResource(bundle: R.hostingBundle, name: "india-inr")
+    /// Image `indonesia-idr`.
+    static let indonesiaIdr = Rswift.ImageResource(bundle: R.hostingBundle, name: "indonesia-idr")
+    /// Image `info`.
+    static let info = Rswift.ImageResource(bundle: R.hostingBundle, name: "info")
+    /// Image `israel-ils`.
+    static let israelIls = Rswift.ImageResource(bundle: R.hostingBundle, name: "israel-ils")
+    /// Image `japan-jpy`.
+    static let japanJpy = Rswift.ImageResource(bundle: R.hostingBundle, name: "japan-jpy")
+    /// Image `main_icons`.
+    static let main_icons = Rswift.ImageResource(bundle: R.hostingBundle, name: "main_icons")
+    /// Image `main`.
+    static let main = Rswift.ImageResource(bundle: R.hostingBundle, name: "main")
+    /// Image `malaysia-myr`.
+    static let malaysiaMyr = Rswift.ImageResource(bundle: R.hostingBundle, name: "malaysia-myr")
+    /// Image `mexico-mxn`.
+    static let mexicoMxn = Rswift.ImageResource(bundle: R.hostingBundle, name: "mexico-mxn")
+    /// Image `new-zealand-nzd`.
+    static let newZealandNzd = Rswift.ImageResource(bundle: R.hostingBundle, name: "new-zealand-nzd")
+    /// Image `norway-nok`.
+    static let norwayNok = Rswift.ImageResource(bundle: R.hostingBundle, name: "norway-nok")
+    /// Image `philippines-php`.
+    static let philippinesPhp = Rswift.ImageResource(bundle: R.hostingBundle, name: "philippines-php")
+    /// Image `republic-of-poland-pln`.
+    static let republicOfPolandPln = Rswift.ImageResource(bundle: R.hostingBundle, name: "republic-of-poland-pln")
+    /// Image `romania-ron`.
+    static let romaniaRon = Rswift.ImageResource(bundle: R.hostingBundle, name: "romania-ron")
+    /// Image `russia-rub`.
+    static let russiaRub = Rswift.ImageResource(bundle: R.hostingBundle, name: "russia-rub")
+    /// Image `singapore-sgd`.
+    static let singaporeSgd = Rswift.ImageResource(bundle: R.hostingBundle, name: "singapore-sgd")
+    /// Image `south-africa-zar`.
+    static let southAfricaZar = Rswift.ImageResource(bundle: R.hostingBundle, name: "south-africa-zar")
+    /// Image `south-korea-krw`.
+    static let southKoreaKrw = Rswift.ImageResource(bundle: R.hostingBundle, name: "south-korea-krw")
+    /// Image `sweden-sek`.
+    static let swedenSek = Rswift.ImageResource(bundle: R.hostingBundle, name: "sweden-sek")
+    /// Image `switzerland-chf`.
+    static let switzerlandChf = Rswift.ImageResource(bundle: R.hostingBundle, name: "switzerland-chf")
+    /// Image `table_view_cell`.
+    static let table_view_cell = Rswift.ImageResource(bundle: R.hostingBundle, name: "table_view_cell")
+    /// Image `thailand-thb`.
+    static let thailandThb = Rswift.ImageResource(bundle: R.hostingBundle, name: "thailand-thb")
+    /// Image `topbar`.
+    static let topbar = Rswift.ImageResource(bundle: R.hostingBundle, name: "topbar")
+    /// Image `turkey-try`.
+    static let turkeyTry = Rswift.ImageResource(bundle: R.hostingBundle, name: "turkey-try")
+    /// Image `united-kingdom-gbp`.
+    static let unitedKingdomGbp = Rswift.ImageResource(bundle: R.hostingBundle, name: "united-kingdom-gbp")
+    /// Image `united-states-of-america-usd`.
+    static let unitedStatesOfAmericaUsd = Rswift.ImageResource(bundle: R.hostingBundle, name: "united-states-of-america-usd")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "australia-aud", bundle: ..., traitCollection: ...)`
+    static func australiaAud(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.australiaAud, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "back", bundle: ..., traitCollection: ...)`
+    static func back(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.back, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "brazil-brl", bundle: ..., traitCollection: ...)`
+    static func brazilBrl(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.brazilBrl, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bulgaria-bgn", bundle: ..., traitCollection: ...)`
+    static func bulgariaBgn(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bulgariaBgn, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "canada-cad", bundle: ..., traitCollection: ...)`
+    static func canadaCad(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.canadaCad, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "china-cny", bundle: ..., traitCollection: ...)`
+    static func chinaCny(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.chinaCny, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "circle", bundle: ..., traitCollection: ...)`
+    static func circle(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.circle, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "croatia-hrk", bundle: ..., traitCollection: ...)`
+    static func croatiaHrk(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.croatiaHrk, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "czech-republic-czk", bundle: ..., traitCollection: ...)`
+    static func czechRepublicCzk(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.czechRepublicCzk, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "denmark-dkk", bundle: ..., traitCollection: ...)`
+    static func denmarkDkk(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.denmarkDkk, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "european-union", bundle: ..., traitCollection: ...)`
+    static func europeanUnion(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.europeanUnion, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "frame", bundle: ..., traitCollection: ...)`
+    static func frame(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.frame, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "hong-kong-hkd", bundle: ..., traitCollection: ...)`
+    static func hongKongHkd(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.hongKongHkd, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "hungary-huf", bundle: ..., traitCollection: ...)`
+    static func hungaryHuf(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.hungaryHuf, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "iceland-isk", bundle: ..., traitCollection: ...)`
+    static func icelandIsk(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.icelandIsk, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "india-inr", bundle: ..., traitCollection: ...)`
+    static func indiaInr(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.indiaInr, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "indonesia-idr", bundle: ..., traitCollection: ...)`
+    static func indonesiaIdr(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.indonesiaIdr, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "info", bundle: ..., traitCollection: ...)`
+    static func info(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.info, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "israel-ils", bundle: ..., traitCollection: ...)`
+    static func israelIls(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.israelIls, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "japan-jpy", bundle: ..., traitCollection: ...)`
+    static func japanJpy(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.japanJpy, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "main", bundle: ..., traitCollection: ...)`
+    static func main(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.main, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "main_icons", bundle: ..., traitCollection: ...)`
+    static func main_icons(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.main_icons, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "malaysia-myr", bundle: ..., traitCollection: ...)`
+    static func malaysiaMyr(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.malaysiaMyr, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "mexico-mxn", bundle: ..., traitCollection: ...)`
+    static func mexicoMxn(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.mexicoMxn, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "new-zealand-nzd", bundle: ..., traitCollection: ...)`
+    static func newZealandNzd(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.newZealandNzd, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "norway-nok", bundle: ..., traitCollection: ...)`
+    static func norwayNok(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.norwayNok, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "philippines-php", bundle: ..., traitCollection: ...)`
+    static func philippinesPhp(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.philippinesPhp, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "republic-of-poland-pln", bundle: ..., traitCollection: ...)`
+    static func republicOfPolandPln(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.republicOfPolandPln, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "romania-ron", bundle: ..., traitCollection: ...)`
+    static func romaniaRon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.romaniaRon, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "russia-rub", bundle: ..., traitCollection: ...)`
+    static func russiaRub(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.russiaRub, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "singapore-sgd", bundle: ..., traitCollection: ...)`
+    static func singaporeSgd(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.singaporeSgd, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "south-africa-zar", bundle: ..., traitCollection: ...)`
+    static func southAfricaZar(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.southAfricaZar, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "south-korea-krw", bundle: ..., traitCollection: ...)`
+    static func southKoreaKrw(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.southKoreaKrw, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "sweden-sek", bundle: ..., traitCollection: ...)`
+    static func swedenSek(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.swedenSek, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "switzerland-chf", bundle: ..., traitCollection: ...)`
+    static func switzerlandChf(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.switzerlandChf, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "table_view_cell", bundle: ..., traitCollection: ...)`
+    static func table_view_cell(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.table_view_cell, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "thailand-thb", bundle: ..., traitCollection: ...)`
+    static func thailandThb(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.thailandThb, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "topbar", bundle: ..., traitCollection: ...)`
+    static func topbar(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.topbar, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "turkey-try", bundle: ..., traitCollection: ...)`
+    static func turkeyTry(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.turkeyTry, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "united-kingdom-gbp", bundle: ..., traitCollection: ...)`
+    static func unitedKingdomGbp(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.unitedKingdomGbp, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "united-states-of-america-usd", bundle: ..., traitCollection: ...)`
+    static func unitedStatesOfAmericaUsd(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.unitedStatesOfAmericaUsd, compatibleWith: traitCollection)
+    }
+    #endif
+
+    fileprivate init() {}
+  }
+
   /// This `R.nib` struct is generated, and contains static references to 1 nibs.
   struct nib {
     /// Nib `TopBar`.
