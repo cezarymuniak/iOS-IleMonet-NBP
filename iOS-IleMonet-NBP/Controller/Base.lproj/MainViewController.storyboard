@@ -26,8 +26,38 @@
                                     <constraint firstAttribute="height" constant="55" id="nwp-Ze-gEd"/>
                                 </constraints>
                             </view>
+                            <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9B-9t-z6f" customClass="BetterSegmentedControl" customModule="BetterSegmentedControl">
+                                <rect key="frame" x="20" y="99" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.46274509803921571" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aw8-Hh-bZX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="indicatorViewBackgroundColor">
+                                        <color key="value" red="0.97950881720000005" green="0.873893857" blue="0.61245745419999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationSpringDamping">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="indicatorViewInset">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="indicatorViewBorderColor">
+                                        <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="indicatorViewBorderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="segmentedControl1ValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="0TJ-2r-0xv"/>
+                                </connections>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="N5W-1c-GdR">
-                                <rect key="frame" x="20" y="99" width="374" height="797"/>
+                                <rect key="frame" x="20" y="149" width="374" height="747"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -39,13 +69,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.10588235294117647" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="N5W-1c-GdR" firstAttribute="top" secondItem="zeC-M4-5a9" secondAttribute="bottom" id="0v3-MJ-dZS"/>
+                            <constraint firstItem="N5W-1c-GdR" firstAttribute="top" secondItem="b9B-9t-z6f" secondAttribute="bottom" id="38k-Ot-lzp"/>
                             <constraint firstItem="EDp-nM-RZk" firstAttribute="trailing" secondItem="N5W-1c-GdR" secondAttribute="trailing" constant="20" id="9hJ-SE-7Uc"/>
                             <constraint firstItem="N5W-1c-GdR" firstAttribute="leading" secondItem="EDp-nM-RZk" secondAttribute="leading" constant="20" id="Ae9-03-F9D"/>
                             <constraint firstItem="zeC-M4-5a9" firstAttribute="top" secondItem="EDp-nM-RZk" secondAttribute="top" id="NhH-OX-7Ht"/>
                             <constraint firstItem="zeC-M4-5a9" firstAttribute="trailing" secondItem="EDp-nM-RZk" secondAttribute="trailing" id="OsN-6I-VmR"/>
                             <constraint firstItem="zeC-M4-5a9" firstAttribute="leading" secondItem="EDp-nM-RZk" secondAttribute="leading" id="TQZ-AC-2eR"/>
+                            <constraint firstItem="b9B-9t-z6f" firstAttribute="top" secondItem="zeC-M4-5a9" secondAttribute="bottom" id="ZHn-fi-QbR"/>
+                            <constraint firstItem="b9B-9t-z6f" firstAttribute="trailing" secondItem="N5W-1c-GdR" secondAttribute="trailing" id="aFE-Bj-DuO"/>
                             <constraint firstItem="zeC-M4-5a9" firstAttribute="top" secondItem="6Hx-Ob-T80" secondAttribute="bottom" id="djV-CV-yAW"/>
+                            <constraint firstItem="b9B-9t-z6f" firstAttribute="leading" secondItem="N5W-1c-GdR" secondAttribute="leading" id="hXE-TO-VIU"/>
                             <constraint firstItem="6Hx-Ob-T80" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hh0-ui-xci"/>
                             <constraint firstAttribute="trailing" secondItem="6Hx-Ob-T80" secondAttribute="trailing" id="kPL-G2-Dyg"/>
                             <constraint firstAttribute="bottom" secondItem="N5W-1c-GdR" secondAttribute="bottom" id="uPx-mr-I6l"/>
@@ -55,6 +88,7 @@
                     </view>
                     <connections>
                         <outlet property="mainTableView" destination="N5W-1c-GdR" id="W0X-ll-dlE"/>
+                        <outlet property="segmentedControl" destination="b9B-9t-z6f" id="pLA-S7-xaz"/>
                         <outlet property="topBar" destination="zeC-M4-5a9" id="dY7-wB-bNJ"/>
                     </connections>
                 </viewController>

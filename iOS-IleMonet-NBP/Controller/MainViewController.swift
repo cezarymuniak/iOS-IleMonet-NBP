@@ -10,6 +10,7 @@ import UIKit
 import Rswift
 import Alamofire
 import SwiftyJSON
+import BetterSegmentedControl
 
 class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
@@ -28,6 +29,10 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     
     
+    @IBAction func segmentedControl1ValueChanged(_ sender: BetterSegmentedControl) {
+        print("The selected index is \(sender.index)")
+    }
+    
     
     @IBOutlet weak var topBar: TopBar!
     
@@ -35,11 +40,14 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     @IBOutlet weak var mainTableView: UITableView!
     
+//
+//    @IBOutlet weak var segmentedControl: UIView!
+//
+    
+
     
     
-    
-    
-    
+    @IBOutlet weak var segmentedControl: BetterSegmentedControl!
     
     
     
@@ -50,6 +58,31 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         self.mainTableView.register(UINib(nibName: R.nib.tableViewCell.name, bundle: nil ),
                                     forCellReuseIdentifier: R.reuseIdentifier.tableViewCell.identifier )
 
+        
+        
+        segmentedControl.segments = LabelSegment.segments(withTitles: ["A", "B", "C"],
+        normalFont: UIFont(name: "HelveticaNeue-Light", size: 13.0)!,
+        selectedFont: UIFont(name: "HelveticaNeue-Medium", size: 13.0)!)
+        
+        
+        
+        
+//
+//        let appleStyledControl: BetterSegmentedControl = .appleStyled(frame: CGRect(x: 0 ,
+//                                                                                    y: 0,
+//                                                                                    width: segmentedControl.bounds.width ,
+//                                                                                    height: segmentedControl.bounds.height),
+//                                                                      titles: ["Tabela A", "Tabela B", "Tabela C"])
+//        segmentedControl.addSubview(appleStyledControl)
+        
+        
+        
+        
+        
+        
+        
+        
+        
         mainTableView.reloadData()
         
     }
@@ -71,5 +104,7 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         // Dispose of any resources that can be recreated.
     }
 
+    
+    
 }
 
