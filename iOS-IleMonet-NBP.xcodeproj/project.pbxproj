@@ -14,6 +14,8 @@
 		83533DC02427AAED00E49C99 /* adventpro-extralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83533DB92427AAED00E49C99 /* adventpro-extralight.ttf */; };
 		83533DC12427AAED00E49C99 /* adventpro-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83533DBA2427AAED00E49C99 /* adventpro-semibold.ttf */; };
 		83533DC22427AAED00E49C99 /* adventpro-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83533DBB2427AAED00E49C99 /* adventpro-light.ttf */; };
+		83533DC42428022600E49C99 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83533DC32428022600E49C99 /* TableViewCell.swift */; };
+		83533DC62428023B00E49C99 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83533DC52428023B00E49C99 /* TableViewCell.xib */; };
 		838499EF2427A03600EC18CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838499EE2427A03600EC18CF /* AppDelegate.swift */; };
 		838499F32427A03600EC18CF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838499F22427A03600EC18CF /* MainViewController.swift */; };
 		838499F62427A03600EC18CF /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838499F42427A03600EC18CF /* MainViewController.storyboard */; };
@@ -36,6 +38,8 @@
 		83533DB92427AAED00E49C99 /* adventpro-extralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "adventpro-extralight.ttf"; sourceTree = "<group>"; };
 		83533DBA2427AAED00E49C99 /* adventpro-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "adventpro-semibold.ttf"; sourceTree = "<group>"; };
 		83533DBB2427AAED00E49C99 /* adventpro-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "adventpro-light.ttf"; sourceTree = "<group>"; };
+		83533DC32428022600E49C99 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		83533DC52428023B00E49C99 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		838499EB2427A03600EC18CF /* iOS-IleMonet-NBP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-IleMonet-NBP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		838499EE2427A03600EC18CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		838499F22427A03600EC18CF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 			children = (
 				83849A0A2427A73E00EC18CF /* TopBar.xib */,
 				83849A0C2427A75000EC18CF /* TopBar.swift */,
+				83533DC32428022600E49C99 /* TableViewCell.swift */,
+				83533DC52428023B00E49C99 /* TableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -228,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83533DBC2427AAED00E49C99 /* adventpro-medium.ttf in Resources */,
+				83533DC62428023B00E49C99 /* TableViewCell.xib in Resources */,
 				83533DBF2427AAED00E49C99 /* adventpro-thin.ttf in Resources */,
 				83533DBD2427AAED00E49C99 /* adventpro-regular.ttf in Resources */,
 				83533DBE2427AAED00E49C99 /* adventpro-bold.ttf in Resources */,
@@ -309,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83533DC42428022600E49C99 /* TableViewCell.swift in Sources */,
 				838499F32427A03600EC18CF /* MainViewController.swift in Sources */,
 				838499EF2427A03600EC18CF /* AppDelegate.swift in Sources */,
 				83849A092427A49E00EC18CF /* R.generated.swift in Sources */,

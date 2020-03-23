@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="adventpro-medium.ttf">
+            <string>AdventPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableViewCell" rowHeight="100" id="mlo-dn-tCR" customClass="TableViewCell" customModule="iOS_IleMonet_NBP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mlo-dn-tCR" id="xG6-5A-aRn">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="table_view_cell" translatesAutoresizingMaskIntoConstraints="NO" id="HJ9-sz-bhq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="european-union" translatesAutoresizingMaskIntoConstraints="NO" id="C4f-LY-T3t">
+                        <rect key="frame" x="15" y="15" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Q63-Nm-SH6"/>
+                            <constraint firstAttribute="width" constant="60" id="iBZ-lU-5Pu"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="republic-of-poland-pln" translatesAutoresizingMaskIntoConstraints="NO" id="LaX-9J-YQb">
+                        <rect key="frame" x="369" y="30" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="9zz-yo-Bme"/>
+                            <constraint firstAttribute="width" constant="30" id="SGc-9f-ZT4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Um-cm-JpZ">
+                        <rect key="frame" x="150" y="50" width="23" height="17"/>
+                        <fontDescription key="fontDescription" name="AdventPro-Medium" family="Advent Pro" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.34" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPF-mG-am6">
+                        <rect key="frame" x="85" y="23.5" width="60" height="43.5"/>
+                        <fontDescription key="fontDescription" name="AdventPro-Medium" family="Advent Pro" pointSize="36"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Euro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E30-PZ-zlK">
+                        <rect key="frame" x="150" y="23.5" width="24" height="17"/>
+                        <fontDescription key="fontDescription" name="AdventPro-Medium" family="Advent Pro" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KN-5f-tiD">
+                        <rect key="frame" x="341" y="36.5" width="23" height="17"/>
+                        <fontDescription key="fontDescription" name="AdventPro-Medium" family="Advent Pro" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUo-Jm-ziG">
+                        <rect key="frame" x="296" y="34" width="26.5" height="22"/>
+                        <fontDescription key="fontDescription" name="AdventPro-Medium" family="Advent Pro" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polski Złoty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FU-oU-fc2">
+                        <rect key="frame" x="296" y="15" width="68" height="17"/>
+                        <fontDescription key="fontDescription" name="AdventPro-Medium" family="Advent Pro" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020-03-20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJB-6s-NHJ">
+                        <rect key="frame" x="296" y="58" width="66" height="17"/>
+                        <fontDescription key="fontDescription" name="AdventPro-Medium" family="Advent Pro" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="C4f-LY-T3t" firstAttribute="top" secondItem="xG6-5A-aRn" secondAttribute="top" constant="15" id="0df-YC-5XT"/>
+                    <constraint firstAttribute="trailing" secondItem="HJ9-sz-bhq" secondAttribute="trailing" id="4IU-px-q3S"/>
+                    <constraint firstItem="1KN-5f-tiD" firstAttribute="centerY" secondItem="C4f-LY-T3t" secondAttribute="centerY" id="4aw-m8-31L"/>
+                    <constraint firstItem="LaX-9J-YQb" firstAttribute="leading" secondItem="1KN-5f-tiD" secondAttribute="trailing" constant="5" id="4qX-Xu-dcd"/>
+                    <constraint firstItem="zUo-Jm-ziG" firstAttribute="leading" secondItem="5FU-oU-fc2" secondAttribute="leading" id="7fm-NX-XLM"/>
+                    <constraint firstItem="4Um-cm-JpZ" firstAttribute="leading" secondItem="YPF-mG-am6" secondAttribute="trailing" constant="5" id="8F7-1v-35n"/>
+                    <constraint firstItem="E30-PZ-zlK" firstAttribute="leading" secondItem="YPF-mG-am6" secondAttribute="trailing" constant="5" id="AJk-iX-nhy"/>
+                    <constraint firstItem="BJB-6s-NHJ" firstAttribute="leading" secondItem="zUo-Jm-ziG" secondAttribute="leading" id="AOI-uE-NSE"/>
+                    <constraint firstAttribute="trailing" secondItem="LaX-9J-YQb" secondAttribute="trailing" constant="15" id="F77-v6-c8G"/>
+                    <constraint firstItem="YPF-mG-am6" firstAttribute="centerY" secondItem="C4f-LY-T3t" secondAttribute="centerY" id="OY1-EG-ZNT"/>
+                    <constraint firstItem="BJB-6s-NHJ" firstAttribute="bottom" secondItem="C4f-LY-T3t" secondAttribute="bottom" id="Qc3-TW-rJf"/>
+                    <constraint firstItem="zUo-Jm-ziG" firstAttribute="centerY" secondItem="1KN-5f-tiD" secondAttribute="centerY" id="SVz-yi-9gl"/>
+                    <constraint firstItem="C4f-LY-T3t" firstAttribute="leading" secondItem="xG6-5A-aRn" secondAttribute="leading" constant="15" id="dd7-RD-ghC"/>
+                    <constraint firstItem="LaX-9J-YQb" firstAttribute="centerY" secondItem="C4f-LY-T3t" secondAttribute="centerY" id="jRi-c1-jof"/>
+                    <constraint firstItem="E30-PZ-zlK" firstAttribute="top" secondItem="YPF-mG-am6" secondAttribute="top" id="jfr-q8-tFL"/>
+                    <constraint firstAttribute="bottom" secondItem="HJ9-sz-bhq" secondAttribute="bottom" constant="20" id="lQW-3G-kuB"/>
+                    <constraint firstItem="4Um-cm-JpZ" firstAttribute="bottom" secondItem="YPF-mG-am6" secondAttribute="bottom" id="lxl-a9-hXu"/>
+                    <constraint firstItem="5FU-oU-fc2" firstAttribute="top" secondItem="C4f-LY-T3t" secondAttribute="top" id="otk-Ac-V0T"/>
+                    <constraint firstItem="LaX-9J-YQb" firstAttribute="leading" secondItem="5FU-oU-fc2" secondAttribute="trailing" constant="5" id="qjf-Xy-dlF"/>
+                    <constraint firstItem="HJ9-sz-bhq" firstAttribute="top" secondItem="xG6-5A-aRn" secondAttribute="top" id="qlB-GM-FJ6"/>
+                    <constraint firstItem="YPF-mG-am6" firstAttribute="leading" secondItem="C4f-LY-T3t" secondAttribute="trailing" constant="10" id="tFx-FO-dGf"/>
+                    <constraint firstItem="HJ9-sz-bhq" firstAttribute="leading" secondItem="xG6-5A-aRn" secondAttribute="leading" id="tqk-OX-QK1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="47.826086956521742" y="164.73214285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="european-union" width="512" height="512"/>
+        <image name="republic-of-poland-pln" width="512" height="512"/>
+        <image name="table_view_cell" width="377" height="96"/>
+    </resources>
+</document>
