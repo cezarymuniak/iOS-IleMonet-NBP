@@ -31,14 +31,14 @@
                         </constraints>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="republic-of-poland-pln" translatesAutoresizingMaskIntoConstraints="NO" id="LaX-9J-YQb">
-                        <rect key="frame" x="369" y="30" width="30" height="30"/>
+                        <rect key="frame" x="384" y="15" width="15" height="15"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="30" id="9zz-yo-Bme"/>
-                            <constraint firstAttribute="width" constant="30" id="SGc-9f-ZT4"/>
+                            <constraint firstAttribute="height" constant="15" id="Q3r-Ay-1xj"/>
+                            <constraint firstAttribute="width" constant="15" id="XoK-jz-NaS"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Um-cm-JpZ">
-                        <rect key="frame" x="150" y="50" width="23" height="17"/>
+                        <rect key="frame" x="150" y="36.5" width="23" height="17"/>
                         <fontDescription key="fontDescription" name="AdventPro-Medium" family="Advent Pro" pointSize="14"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -49,32 +49,32 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Euro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E30-PZ-zlK">
-                        <rect key="frame" x="150" y="23.5" width="24" height="17"/>
-                        <fontDescription key="fontDescription" name="AdventPro-Medium" family="Advent Pro" pointSize="14"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KN-5f-tiD">
-                        <rect key="frame" x="341" y="36.5" width="23" height="17"/>
+                        <rect key="frame" x="356" y="14" width="23" height="17"/>
                         <fontDescription key="fontDescription" name="AdventPro-Medium" family="Advent Pro" pointSize="14"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUo-Jm-ziG">
-                        <rect key="frame" x="296" y="34" width="26.5" height="22"/>
+                        <rect key="frame" x="324.5" y="11.5" width="26.5" height="22"/>
                         <fontDescription key="fontDescription" name="AdventPro-Medium" family="Advent Pro" pointSize="18"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polski Złoty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FU-oU-fc2">
-                        <rect key="frame" x="296" y="15" width="68" height="17"/>
+                        <rect key="frame" x="251.5" y="14" width="68" height="17"/>
                         <fontDescription key="fontDescription" name="AdventPro-Medium" family="Advent Pro" pointSize="14"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020-03-20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJB-6s-NHJ">
-                        <rect key="frame" x="296" y="58" width="66" height="17"/>
+                        <rect key="frame" x="333" y="36.5" width="66" height="17"/>
+                        <fontDescription key="fontDescription" name="AdventPro-Medium" family="Advent Pro" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Euro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E30-PZ-zlK">
+                        <rect key="frame" x="150" y="50" width="24" height="17"/>
                         <fontDescription key="fontDescription" name="AdventPro-Medium" family="Advent Pro" pointSize="14"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -83,30 +83,39 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="C4f-LY-T3t" firstAttribute="top" secondItem="xG6-5A-aRn" secondAttribute="top" constant="15" id="0df-YC-5XT"/>
+                    <constraint firstAttribute="trailing" secondItem="LaX-9J-YQb" secondAttribute="trailing" constant="15" id="1Rc-Cq-t8e"/>
                     <constraint firstAttribute="trailing" secondItem="HJ9-sz-bhq" secondAttribute="trailing" id="4IU-px-q3S"/>
-                    <constraint firstItem="1KN-5f-tiD" firstAttribute="centerY" secondItem="C4f-LY-T3t" secondAttribute="centerY" id="4aw-m8-31L"/>
-                    <constraint firstItem="LaX-9J-YQb" firstAttribute="leading" secondItem="1KN-5f-tiD" secondAttribute="trailing" constant="5" id="4qX-Xu-dcd"/>
-                    <constraint firstItem="zUo-Jm-ziG" firstAttribute="leading" secondItem="5FU-oU-fc2" secondAttribute="leading" id="7fm-NX-XLM"/>
-                    <constraint firstItem="4Um-cm-JpZ" firstAttribute="leading" secondItem="YPF-mG-am6" secondAttribute="trailing" constant="5" id="8F7-1v-35n"/>
-                    <constraint firstItem="E30-PZ-zlK" firstAttribute="leading" secondItem="YPF-mG-am6" secondAttribute="trailing" constant="5" id="AJk-iX-nhy"/>
-                    <constraint firstItem="BJB-6s-NHJ" firstAttribute="leading" secondItem="zUo-Jm-ziG" secondAttribute="leading" id="AOI-uE-NSE"/>
-                    <constraint firstAttribute="trailing" secondItem="LaX-9J-YQb" secondAttribute="trailing" constant="15" id="F77-v6-c8G"/>
+                    <constraint firstItem="LaX-9J-YQb" firstAttribute="top" secondItem="xG6-5A-aRn" secondAttribute="top" constant="15" id="4ct-IV-5BG"/>
+                    <constraint firstItem="4Um-cm-JpZ" firstAttribute="centerY" secondItem="YPF-mG-am6" secondAttribute="centerY" id="JOh-PU-fFM"/>
+                    <constraint firstItem="E30-PZ-zlK" firstAttribute="leading" secondItem="4Um-cm-JpZ" secondAttribute="leading" id="OIk-A3-wgG"/>
                     <constraint firstItem="YPF-mG-am6" firstAttribute="centerY" secondItem="C4f-LY-T3t" secondAttribute="centerY" id="OY1-EG-ZNT"/>
-                    <constraint firstItem="BJB-6s-NHJ" firstAttribute="bottom" secondItem="C4f-LY-T3t" secondAttribute="bottom" id="Qc3-TW-rJf"/>
-                    <constraint firstItem="zUo-Jm-ziG" firstAttribute="centerY" secondItem="1KN-5f-tiD" secondAttribute="centerY" id="SVz-yi-9gl"/>
+                    <constraint firstItem="1KN-5f-tiD" firstAttribute="centerY" secondItem="LaX-9J-YQb" secondAttribute="centerY" id="QzU-cO-qB5"/>
+                    <constraint firstItem="4Um-cm-JpZ" firstAttribute="leading" secondItem="YPF-mG-am6" secondAttribute="trailing" constant="5" id="TxF-cM-Ef5"/>
+                    <constraint firstItem="BJB-6s-NHJ" firstAttribute="centerY" secondItem="YPF-mG-am6" secondAttribute="centerY" id="VNg-Yp-HtE"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="E30-PZ-zlK" secondAttribute="trailing" constant="30" id="XaX-ft-vkP"/>
+                    <constraint firstItem="E30-PZ-zlK" firstAttribute="leading" secondItem="YPF-mG-am6" secondAttribute="trailing" constant="5" id="aDa-uf-14T"/>
                     <constraint firstItem="C4f-LY-T3t" firstAttribute="leading" secondItem="xG6-5A-aRn" secondAttribute="leading" constant="15" id="dd7-RD-ghC"/>
-                    <constraint firstItem="LaX-9J-YQb" firstAttribute="centerY" secondItem="C4f-LY-T3t" secondAttribute="centerY" id="jRi-c1-jof"/>
-                    <constraint firstItem="E30-PZ-zlK" firstAttribute="top" secondItem="YPF-mG-am6" secondAttribute="top" id="jfr-q8-tFL"/>
+                    <constraint firstItem="zUo-Jm-ziG" firstAttribute="leading" secondItem="5FU-oU-fc2" secondAttribute="trailing" constant="5" id="jlJ-Ht-sYQ"/>
                     <constraint firstAttribute="bottom" secondItem="HJ9-sz-bhq" secondAttribute="bottom" constant="20" id="lQW-3G-kuB"/>
-                    <constraint firstItem="4Um-cm-JpZ" firstAttribute="bottom" secondItem="YPF-mG-am6" secondAttribute="bottom" id="lxl-a9-hXu"/>
-                    <constraint firstItem="5FU-oU-fc2" firstAttribute="top" secondItem="C4f-LY-T3t" secondAttribute="top" id="otk-Ac-V0T"/>
-                    <constraint firstItem="LaX-9J-YQb" firstAttribute="leading" secondItem="5FU-oU-fc2" secondAttribute="trailing" constant="5" id="qjf-Xy-dlF"/>
+                    <constraint firstItem="5FU-oU-fc2" firstAttribute="centerY" secondItem="zUo-Jm-ziG" secondAttribute="centerY" id="qZ2-w9-5u2"/>
                     <constraint firstItem="HJ9-sz-bhq" firstAttribute="top" secondItem="xG6-5A-aRn" secondAttribute="top" id="qlB-GM-FJ6"/>
+                    <constraint firstItem="LaX-9J-YQb" firstAttribute="leading" secondItem="1KN-5f-tiD" secondAttribute="trailing" constant="5" id="rNx-e4-ELO"/>
+                    <constraint firstItem="zUo-Jm-ziG" firstAttribute="centerY" secondItem="1KN-5f-tiD" secondAttribute="centerY" id="rPW-NL-ArI"/>
                     <constraint firstItem="YPF-mG-am6" firstAttribute="leading" secondItem="C4f-LY-T3t" secondAttribute="trailing" constant="10" id="tFx-FO-dGf"/>
                     <constraint firstItem="HJ9-sz-bhq" firstAttribute="leading" secondItem="xG6-5A-aRn" secondAttribute="leading" id="tqk-OX-QK1"/>
+                    <constraint firstItem="E30-PZ-zlK" firstAttribute="bottom" secondItem="YPF-mG-am6" secondAttribute="bottom" id="u5c-sz-MSq"/>
+                    <constraint firstItem="1KN-5f-tiD" firstAttribute="leading" secondItem="zUo-Jm-ziG" secondAttribute="trailing" constant="5" id="wmi-31-ZVk"/>
+                    <constraint firstItem="BJB-6s-NHJ" firstAttribute="trailing" secondItem="LaX-9J-YQb" secondAttribute="trailing" id="xTG-CE-Vaf"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="cellDate" destination="BJB-6s-NHJ" id="gA2-k4-Jgb"/>
+                <outlet property="currencyFlag" destination="C4f-LY-T3t" id="P6W-VT-XZ2"/>
+                <outlet property="currencyName" destination="E30-PZ-zlK" id="80K-HA-fAE"/>
+                <outlet property="currencyPrice" destination="YPF-mG-am6" id="zFg-zD-kEW"/>
+                <outlet property="currencyShortName" destination="4Um-cm-JpZ" id="ElO-p1-qpb"/>
+            </connections>
             <point key="canvasLocation" x="47.826086956521742" y="164.73214285714286"/>
         </tableViewCell>
     </objects>

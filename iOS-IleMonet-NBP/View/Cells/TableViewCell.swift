@@ -11,6 +11,10 @@ import UIKit
 
 
 class TableViewCell: UITableViewCell {
-
-
+    
+    @IBOutlet weak var currencyName: UILabel!
+    @IBOutlet weak var currencyShortName: UILabel!
+    @IBOutlet weak var currencyPrice: UILabel!
+    @IBOutlet weak var cellDate: UILabel!
+    @IBOutlet weak var currencyFlag: UIImageView!
 }
