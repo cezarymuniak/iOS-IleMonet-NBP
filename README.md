@@ -4,7 +4,7 @@
 
 ## Project overview
 
-IleMonet app that collects currencies data from NBP API.
+IleMonet app collects currencies data from NBP API.
 
 Basics
 ------
