@@ -13,9 +13,9 @@ Basics
 1. Swipe views
 2. Toast
 
-https://gfycat.com/fragrantnauticalaidi
 
-![Alt Text](https://media.giphy.com/media/hQiRz0z07GZcsDh9O4/giphy.gif)  
+
+![Alt Text](https://media.giphy.com/media/eK0QQCxUlbXa2wyUhH/giphy.gif)  
 
 
 
