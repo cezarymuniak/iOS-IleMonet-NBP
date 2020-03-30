@@ -1,33 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n0G-JZ-3zg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="adventpro-semibold.ttf">
+            <string>AdventPro-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Main View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="o6E-Ow-Pdk">
+            <objects>
+                <navigationController id="n0G-JZ-3zg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="jxP-nt-huL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sP4-oO-0Mf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nf5-xC-INb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-617" y="96"/>
+        </scene>
+        <!--MainViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="iOS_IleMonet_NBP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" title="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MainViewController" customModule="iOS_IleMonet_NBP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Hx-Ob-T80">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.46274509803921571" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeC-M4-5a9" customClass="TopBar" customModule="iOS_IleMonet_NBP" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="414" height="55"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="nwp-Ze-gEd"/>
                                 </constraints>
                             </view>
                             <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9B-9t-z6f" customClass="BetterSegmentedControl" customModule="BetterSegmentedControl">
-                                <rect key="frame" x="20" y="99" width="374" height="50"/>
+                                <rect key="frame" x="20" y="55" width="315" height="50"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.46274509803921571" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="aw8-Hh-bZX"/>
@@ -57,7 +84,7 @@
                                 </connections>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="N5W-1c-GdR">
-                                <rect key="frame" x="20" y="149" width="374" height="747"/>
+                                <rect key="frame" x="20" y="105" width="374" height="703"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -66,35 +93,64 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="ODR-U6-dik"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QW-rH-06H">
+                                <rect key="frame" x="335" y="55" width="59" height="50"/>
+                                <fontDescription key="fontDescription" name="AdventPro-SemiBold" family="Advent Pro" pointSize="12"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="titleEdgeInsets" minX="-15" minY="25" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="20" minY="-15" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Odśwież" image="arrow.clockwise" catalog="system"/>
+                                <connections>
+                                    <action selector="refreshButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b1D-VR-qwd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.10588235294117647" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="N5W-1c-GdR" firstAttribute="top" secondItem="b9B-9t-z6f" secondAttribute="bottom" id="38k-Ot-lzp"/>
                             <constraint firstItem="EDp-nM-RZk" firstAttribute="trailing" secondItem="N5W-1c-GdR" secondAttribute="trailing" constant="20" id="9hJ-SE-7Uc"/>
                             <constraint firstItem="N5W-1c-GdR" firstAttribute="leading" secondItem="EDp-nM-RZk" secondAttribute="leading" constant="20" id="Ae9-03-F9D"/>
+                            <constraint firstItem="7QW-rH-06H" firstAttribute="trailing" secondItem="N5W-1c-GdR" secondAttribute="trailing" id="Ajn-Pq-gpe"/>
+                            <constraint firstItem="7QW-rH-06H" firstAttribute="centerY" secondItem="b9B-9t-z6f" secondAttribute="centerY" id="E1Z-gf-dUo"/>
                             <constraint firstItem="zeC-M4-5a9" firstAttribute="top" secondItem="EDp-nM-RZk" secondAttribute="top" id="NhH-OX-7Ht"/>
                             <constraint firstItem="zeC-M4-5a9" firstAttribute="trailing" secondItem="EDp-nM-RZk" secondAttribute="trailing" id="OsN-6I-VmR"/>
                             <constraint firstItem="zeC-M4-5a9" firstAttribute="leading" secondItem="EDp-nM-RZk" secondAttribute="leading" id="TQZ-AC-2eR"/>
                             <constraint firstItem="b9B-9t-z6f" firstAttribute="top" secondItem="zeC-M4-5a9" secondAttribute="bottom" id="ZHn-fi-QbR"/>
-                            <constraint firstItem="b9B-9t-z6f" firstAttribute="trailing" secondItem="N5W-1c-GdR" secondAttribute="trailing" id="aFE-Bj-DuO"/>
                             <constraint firstItem="zeC-M4-5a9" firstAttribute="top" secondItem="6Hx-Ob-T80" secondAttribute="bottom" id="djV-CV-yAW"/>
+                            <constraint firstItem="N5W-1c-GdR" firstAttribute="top" secondItem="7QW-rH-06H" secondAttribute="bottom" id="hSd-bY-BAQ"/>
                             <constraint firstItem="b9B-9t-z6f" firstAttribute="leading" secondItem="N5W-1c-GdR" secondAttribute="leading" id="hXE-TO-VIU"/>
                             <constraint firstItem="6Hx-Ob-T80" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hh0-ui-xci"/>
                             <constraint firstAttribute="trailing" secondItem="6Hx-Ob-T80" secondAttribute="trailing" id="kPL-G2-Dyg"/>
+                            <constraint firstItem="7QW-rH-06H" firstAttribute="leading" secondItem="b9B-9t-z6f" secondAttribute="trailing" id="tcO-Ed-XkD"/>
                             <constraint firstAttribute="bottom" secondItem="N5W-1c-GdR" secondAttribute="bottom" id="uPx-mr-I6l"/>
                             <constraint firstItem="6Hx-Ob-T80" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="y3h-xh-vhv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EDp-nM-RZk"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Sjf-fG-tmM"/>
                     <connections>
                         <outlet property="mainTableView" destination="N5W-1c-GdR" id="W0X-ll-dlE"/>
                         <outlet property="segmentedControl" destination="b9B-9t-z6f" id="pLA-S7-xaz"/>
                         <outlet property="topBar" destination="zeC-M4-5a9" id="dY7-wB-bNJ"/>
+                        <segue destination="5Lr-Oy-R6X" kind="show" identifier="DetailView" id="6un-Xk-FxW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
         </scene>
+        <!--DetailViewController-->
+        <scene sceneID="fT3-EA-flZ">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DetailViewController" storyboardName="DetailViewController" referencedIdentifier="DetailViewController" id="5Lr-Oy-R6X" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Y5N-dh-KWc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AID-Gx-BMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891" y="105"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="arrow.clockwise" catalog="system" width="56" height="64"/>
+    </resources>
 </document>

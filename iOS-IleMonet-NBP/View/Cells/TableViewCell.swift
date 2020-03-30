@@ -11,7 +11,6 @@ import UIKit
 
 
 class TableViewCell: UITableViewCell {
-    
     @IBOutlet weak var currencyName: UILabel!
     @IBOutlet weak var currencyShortName: UILabel!
     @IBOutlet weak var currencyPrice: UILabel!

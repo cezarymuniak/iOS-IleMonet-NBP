@@ -1,6 +1,8 @@
 PODS:
   - Alamofire (5.0.4)
   - BetterSegmentedControl (1.3.0)
+  - DatePickerDialog (3.0)
+  - IHProgressHUD (0.1.4)
   - R.swift (5.1.0):
     - R.swift.Library (~> 5.1.0)
   - R.swift.Library (5.1.0)
@@ -9,6 +11,8 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.0)
   - BetterSegmentedControl (~> 1.3)
+  - DatePickerDialog
+  - IHProgressHUD
   - R.swift
   - SwiftyJSON (~> 4.0)
 
@@ -16,6 +20,8 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - BetterSegmentedControl
+    - DatePickerDialog
+    - IHProgressHUD
     - R.swift
     - R.swift.Library
     - SwiftyJSON
@@ -23,10 +29,12 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 0fe5fd24b4298dc377a6550da7d5f1b30e286fcb
   BetterSegmentedControl: 85d1b0343a09603b098884d527f550dfc8e6cdd9
+  DatePickerDialog: 03dbb8350bfa80302ab2a8c83cee1fec70184444
+  IHProgressHUD: a01846bfbb581c761c79747c67b08387c3bdfae3
   R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
   R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 41136bf35a11484f6763ab42b2a53e9e9602c1a0
+PODFILE CHECKSUM: 1408c8c0e219ded9c723f367cfececbff6d35f5e
 
 COCOAPODS: 1.8.4

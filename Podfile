@@ -11,5 +11,7 @@ pod 'Alamofire', '~> 5.0'
 pod 'R.swift'
 pod 'SwiftyJSON', '~> 4.0'
 pod 'BetterSegmentedControl', '~> 1.3'
+pod 'DatePickerDialog'
+pod 'IHProgressHUD'
 
 end

@@ -90,12 +90,45 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
+  /// This `R.segue` struct is generated, and contains static references to 1 view controllers.
+  struct segue {
+    /// This struct is generated for `MainViewController`, and contains static references to 1 segues.
+    struct mainViewController {
+      /// Segue identifier `DetailView`.
+      static let detailView: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, MainViewController, DetailViewController> = Rswift.StoryboardSegueIdentifier(identifier: "DetailView")
+
+      #if os(iOS) || os(tvOS)
+      /// Optionally returns a typed version of segue `DetailView`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func detailView(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, MainViewController, DetailViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.mainViewController.detailView, segue: segue)
+      }
+      #endif
+
+      fileprivate init() {}
+    }
+
+    fileprivate init() {}
+  }
+  #endif
+
+  #if os(iOS) || os(tvOS)
+  /// This `R.storyboard` struct is generated, and contains static references to 3 storyboards.
   struct storyboard {
+    /// Storyboard `DetailViewController`.
+    static let detailViewController = _R.storyboard.detailViewController()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `MainViewController`.
     static let mainViewController = _R.storyboard.mainViewController()
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "DetailViewController", bundle: ...)`
+    static func detailViewController(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.detailViewController)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
@@ -738,12 +771,37 @@ struct _R: Rswift.Validatable {
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
       #if os(iOS) || os(tvOS)
+      try detailViewController.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
       try launchScreen.validate()
       #endif
       #if os(iOS) || os(tvOS)
       try mainViewController.validate()
       #endif
     }
+
+    #if os(iOS) || os(tvOS)
+    struct detailViewController: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = DetailViewController
+
+      let bundle = R.hostingBundle
+      let detailViewController = StoryboardViewControllerResource<DetailViewController>(identifier: "DetailViewController")
+      let name = "DetailViewController"
+
+      func detailViewController(_: Void = ()) -> DetailViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: detailViewController)
+      }
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+        if _R.storyboard.detailViewController().detailViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'detailViewController' could not be loaded from storyboard 'DetailViewController' as 'DetailViewController'.") }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
@@ -763,14 +821,21 @@ struct _R: Rswift.Validatable {
 
     #if os(iOS) || os(tvOS)
     struct mainViewController: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = MainViewController
+      typealias InitialController = UIKit.UINavigationController
 
       let bundle = R.hostingBundle
+      let mainViewController = StoryboardViewControllerResource<MainViewController>(identifier: "MainViewController")
       let name = "MainViewController"
 
+      func mainViewController(_: Void = ()) -> MainViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mainViewController)
+      }
+
       static func validate() throws {
+        if UIKit.UIImage(named: "arrow.clockwise", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'arrow.clockwise' is used in storyboard 'MainViewController', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
+        if _R.storyboard.mainViewController().mainViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mainViewController' could not be loaded from storyboard 'MainViewController' as 'MainViewController'.") }
       }
 
       fileprivate init() {}

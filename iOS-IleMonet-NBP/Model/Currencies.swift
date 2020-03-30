@@ -14,4 +14,6 @@ struct Currencies {
     let currencyFullName: String
     var price: Double
     var date: String
+    let rateCode: String
+    let tableType: String
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		83286D9B2429316C0025711A /* Currencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83286D9A2429316C0025711A /* Currencies.swift */; };
+		83286D9E242BEF8F0025711A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83286D9D242BEF8F0025711A /* DetailViewController.swift */; };
+		83286DA2242C1DAE0025711A /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83286DA1242C1DAE0025711A /* DetailViewController.storyboard */; };
 		83533DBC2427AAED00E49C99 /* adventpro-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83533DB52427AAED00E49C99 /* adventpro-medium.ttf */; };
 		83533DBD2427AAED00E49C99 /* adventpro-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83533DB62427AAED00E49C99 /* adventpro-regular.ttf */; };
 		83533DBE2427AAED00E49C99 /* adventpro-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83533DB72427AAED00E49C99 /* adventpro-bold.ttf */; };
@@ -32,6 +34,8 @@
 		324782CF0C3B6E89F79671B3 /* Pods-iOS-IleMonet-NBP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-IleMonet-NBP.debug.xcconfig"; path = "Target Support Files/Pods-iOS-IleMonet-NBP/Pods-iOS-IleMonet-NBP.debug.xcconfig"; sourceTree = "<group>"; };
 		811809C396B4DC6B6A4DBC2D /* Pods-iOS-IleMonet-NBP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-IleMonet-NBP.release.xcconfig"; path = "Target Support Files/Pods-iOS-IleMonet-NBP/Pods-iOS-IleMonet-NBP.release.xcconfig"; sourceTree = "<group>"; };
 		83286D9A2429316C0025711A /* Currencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currencies.swift; sourceTree = "<group>"; };
+		83286D9D242BEF8F0025711A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		83286DA1242C1DAE0025711A /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
 		83533DB22427A98400E49C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83533DB52427AAED00E49C99 /* adventpro-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "adventpro-medium.ttf"; sourceTree = "<group>"; };
 		83533DB62427AAED00E49C99 /* adventpro-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "adventpro-regular.ttf"; sourceTree = "<group>"; };
@@ -73,6 +77,14 @@
 				811809C396B4DC6B6A4DBC2D /* Pods-iOS-IleMonet-NBP.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		83286D9C242BEF720025711A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				83286D9D242BEF8F0025711A /* DetailViewController.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		83533DB32427AA8F00E49C99 /* Resources */ = {
@@ -142,8 +154,8 @@
 		83849A032427A31200EC18CF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				838499F22427A03600EC18CF /* MainViewController.swift */,
-				838499F42427A03600EC18CF /* MainViewController.storyboard */,
+				838A4CAC24319EA30004D390 /* Main */,
+				83286D9C242BEF720025711A /* Detail */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -151,6 +163,8 @@
 		83849A052427A32500EC18CF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				838499F42427A03600EC18CF /* MainViewController.storyboard */,
+				83286DA1242C1DAE0025711A /* DetailViewController.storyboard */,
 				83849A062427A3B200EC18CF /* Cells */,
 			);
 			path = View;
@@ -165,6 +179,14 @@
 				83533DC52428023B00E49C99 /* TableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		838A4CAC24319EA30004D390 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				838499F22427A03600EC18CF /* MainViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		D44FA58214EABBF67127544F /* Frameworks */ = {
@@ -245,6 +267,7 @@
 				838499F82427A03800EC18CF /* Assets.xcassets in Resources */,
 				838499F62427A03600EC18CF /* MainViewController.storyboard in Resources */,
 				83533DC12427AAED00E49C99 /* adventpro-semibold.ttf in Resources */,
+				83286DA2242C1DAE0025711A /* DetailViewController.storyboard in Resources */,
 				83533DC22427AAED00E49C99 /* adventpro-light.ttf in Resources */,
 				83533DC02427AAED00E49C99 /* adventpro-extralight.ttf in Resources */,
 				83849A0B2427A73E00EC18CF /* TopBar.xib in Resources */,
@@ -325,6 +348,7 @@
 				838499EF2427A03600EC18CF /* AppDelegate.swift in Sources */,
 				83849A092427A49E00EC18CF /* R.generated.swift in Sources */,
 				83849A0D2427A75000EC18CF /* TopBar.swift in Sources */,
+				83286D9E242BEF8F0025711A /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

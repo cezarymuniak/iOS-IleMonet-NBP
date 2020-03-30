@@ -163,12 +163,16 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/BetterSegmentedControl/BetterSegmentedControl.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DatePickerDialog/DatePickerDialog.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/IHProgressHUD/IHProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/BetterSegmentedControl/BetterSegmentedControl.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DatePickerDialog/DatePickerDialog.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/IHProgressHUD/IHProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
 fi
